@@ -2,9 +2,9 @@ using MelonLoader;
 using HarmonyLib;
 using UnityEngine;
 using Il2CppMoonClient;
-
-using Vector3 = UnityEngine.Vector3;
 using System.IO;
+using System.Text;
+using System.Reflection;
 
 namespace ROCSpeedHack
 {
@@ -13,17 +13,30 @@ namespace ROCSpeedHack
         public static float runSpeed = 9f;
         public static bool unlockCameraDistance = false;
         public static bool showAllHealthBars = false;
-        public static Vector3 playerPos;
         public static MelonLogger.Instance logger;
         public static bool runSpeedEnabled = true;
         private static bool showRunSpeed = true;
-        public static MPlayer player;
+        private string lastSceneName = string.Empty;
 
         public override void OnInitializeMelon()
         {
             base.OnInitializeMelon();
             MainMod.logger = LoggerInstance;
-            HarmonyInstance.PatchAll();
+            foreach (MethodBase based in HarmonyInstance.GetPatchedMethods())
+            {
+                logger.Msg($"PATCHED METHOD {based.Name} {based.FullDescription()}");
+            }
+        }
+
+        public override void OnSceneWasLoaded(int buildIndex, string sceneName)
+        {
+            base.OnSceneWasLoaded(buildIndex, sceneName);
+            if (lastSceneName == "GameEntry")
+            {
+                logger.Msg("Running hooks.lua");
+                runLuaFile("hooks.lua", Encoding.UTF8.GetString(Properties.Resources.hooks));
+            }
+            lastSceneName = sceneName;
         }
 
         public override void OnUpdate()
@@ -34,81 +47,40 @@ namespace ROCSpeedHack
             {
                 showRunSpeed = !showRunSpeed;
             }
-        }
 
-        [HarmonyPatch(typeof(Il2CppMoonClient.MEntity))]
-        [HarmonyPatch("RunSpeed")]
-        [HarmonyPatch(new System.Type[] { typeof(Il2CppMoonClient.MEntity) })]
-        [HarmonyPatch(MethodType.Getter)]
-        public class Patch
-        {
-            [HarmonyPostfix]
-            static void Postfix(ref float __result, ref Il2CppMoonClient.MEntity __instance)
+            /*
+            if (Input.GetKeyDown(KeyCode.Z))
             {
-                if (__instance.IsPlayer && __instance.IsLoaded && runSpeedEnabled)
+                autoSkipCutScenes = !autoSkipCutScenes;
+                logger.Msg($"Cutscene autoskip set to {autoSkipCutScenes}");
+            }
+            if (autoSkipCutScenes)
+            {
+                if (MCutSceneMgr._instance.IsPlaying)
                 {
-                    __result = MainMod.runSpeed;
+                    MCutSceneMgr._instance.Skip();
                 }
             }
+
+            */
         }
 
-        [HarmonyPatch(typeof(MMonsterHUDComponent))]
-        [HarmonyPatch(nameof(MMonsterHUDComponent.IsTarget))]
-        [HarmonyPatch(MethodType.Normal)]
-        public class HUDPatch
-        {
-            [HarmonyPostfix]
-            static void Postfix(ref bool __result)
-            {
-                if (showAllHealthBars)
-                {
-                    __result = true;
-                }
-            }
-        }
 
-        [HarmonyPatch(typeof(MMoveComponent))]
-        [HarmonyPatch(nameof(MMoveComponent.TargetPos))]
-        [HarmonyPatch(new System.Type[] { typeof(MMoveComponent) })]
-        [HarmonyPatch(MethodType.Getter)]
-        public class MovementPatch
-        {
-            [HarmonyPostfix]
-            static void Postfix(ref Vector3 __result, ref MMoveComponent __instance)
-            {
-                MainMod.player = __instance.Player;
-                MainMod.playerPos = __result;
-            }
-        }
 
-        [HarmonyPatch(typeof(Il2CppMoonClient.MCameraConfig))]
-        [HarmonyPatch("MaxCameraDis")]
-        [HarmonyPatch(new System.Type[] { typeof(Il2CppMoonClient.MCameraConfig) })]
-        [HarmonyPatch(MethodType.Getter)]
-        public class FOVPatch
-        {
-            [HarmonyPostfix]
-            static void Postfix(ref float __result, ref Il2CppMoonClient.MCameraConfig __instance)
-            {
-                if (MainMod.unlockCameraDistance)
-                {
-                    __result = __result * 3;
-                }
-            }
-        }
 
-        private void runLuaFile()
+
+        private void runLuaFile(string filename, string defaultContent)
         {
-            if (File.Exists("inject.lua"))
+            if (File.Exists(filename))
             {
-                MLuaClientHelper.DoLuaString(File.ReadAllText("inject.lua"));
+                MLuaClientHelper.DoLuaString(File.ReadAllText(filename));
             }
             else
             {
-                File.WriteAllText("inject.lua", "CommonUI.Dialog.ShowOKDlg(true, nil, \"Lua injection working!\", function()\r\nend)");
-                runLuaFile();
+                File.WriteAllText(filename, defaultContent);
+                runLuaFile(filename, defaultContent);
             }
-        }
+        }   
 
         public override void OnGUI()
         {
@@ -127,7 +99,7 @@ namespace ROCSpeedHack
                 Rect plusButtonRect = new Rect(Screen.width / 2 + 105, 10, 30, 30);
                 if (GUI.Button(plusButtonRect, "+"))
                 {
-                    runSpeed++;
+                    runSpeed = (float)(runSpeed + 0.2);
                     LoggerInstance.Msg("RunSpeed set to " + runSpeed.ToString());
                 }
 
@@ -135,7 +107,7 @@ namespace ROCSpeedHack
                 Rect minusButtonRect = new Rect(Screen.width / 2 - 135, 10, 30, 30);
                 if (GUI.Button(minusButtonRect, "-"))
                 {
-                    runSpeed--;
+                    runSpeed = (float)(runSpeed - 0.2);
                     LoggerInstance.Msg("RunSpeed set to " + runSpeed.ToString());
                 }
 
@@ -167,9 +139,10 @@ namespace ROCSpeedHack
                 Rect luaButtonRect = new Rect(Screen.width / 2 - 100, 170, 200, 30);
                 if (GUI.Button(luaButtonRect, "Run Lua"))
                 {
-                    runLuaFile();
+                    runLuaFile("inject.lua", Encoding.UTF8.GetString(Properties.Resources.inject));
                 }
             }
         }
+
     }
 }

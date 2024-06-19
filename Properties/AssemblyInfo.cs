@@ -16,7 +16,7 @@ using ROCSpeedHack;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: MelonGame(null, null)]
-[assembly: MelonInfo(typeof(MainMod), "ROGHack", "1.1", "sneedF")]
+[assembly: MelonInfo(typeof(MainMod), "ROGHack", "1.2", "sneedF")]
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.

@@ -34,29 +34,124 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\net35\0Harmony.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\net6\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cpp">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Dependencies\SupportModules\Il2Cpp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAVProVideo.Extensions.Timeline">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppAVProVideo.Extensions.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAVProVideo.Extensions.UnityUI">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppAVProVideo.Extensions.UnityUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAVProVideo.Extensions.VisualEffectGraph">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppAVProVideo.Extensions.VisualEffectGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAVProVideo.Runtime">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppAVProVideo.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppCString">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppCString.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDebugger">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppDebugger.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDemiLib">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppDemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDOTween">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppDOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDOTween43">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppDOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDOTween46">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppDOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDOTweenPro">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppDOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppenum2int">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2Cppenum2int.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppGoogle.Protobuf">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppGoogle.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppIFix.Core">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppIFix.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Dependencies\SupportModules\Il2CppInterop.Common.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppInterop.HarmonySupport">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Dependencies\SupportModules\Il2CppInterop.HarmonySupport.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Dependencies\SupportModules\Il2CppInterop.HarmonySupport.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppInterop.Runtime">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Dependencies\SupportModules\Il2CppInterop.Runtime.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Dependencies\SupportModules\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Security">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppMono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppMoonClient">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppMoonClient.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppMoonClient.dll</HintPath>
     </Reference>
-    <Reference Include="Il2CppMoonCommonLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Il2CppMoonCommonLib">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppMoonCommonLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMoonSerializable">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppMoonSerializable.dll</HintPath>
+    </Reference>
     <Reference Include="Il2Cppmscorlib">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppNementic.SelectionUtility.Runtime">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppNementic.SelectionUtility.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppNewtonsoft.Json">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSDKLib">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppSDKLib.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppSystem">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Configuration">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppSystem.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Runtime.Serialization">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml.Linq">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTextMeshPro-2017.3-Runtime">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppTextMeshPro-2017.3-Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppUniWebView-CSharp">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppUniWebView-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVuplex">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppVuplex.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppWorldStreamRuntime">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Il2CppWorldStreamRuntime.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\net35\MelonLoader.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\net6\MelonLoader.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -67,37 +162,221 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.InputModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Desktop\test\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>..\..\Downloads\GameLauncher\ROO_PC\MelonLoader\Il2CppAssemblies\UnityEngine.XRModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainMod.cs" />
+    <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hooks.lua" />
+    <None Include="Resources\inject.lua" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
